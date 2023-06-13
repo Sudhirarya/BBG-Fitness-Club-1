@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBG Fitness Club</title>
+    <script
+      src="https://kit.fontawesome.com/db669c5823.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- aniamtion cdn link -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <!-- swiper cdn link -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <!-- NAV START -->
+    <nav class="nav">
+      <!-- logo -->
+      <div class="logo">
+        <div class="name">
+          <a href="#"
+            ><img src="images/gymlogo.png" alt="" loading="eager" />
+            <h1>B<span>B</span>G</h1>
+          </a>
+        </div>
+      </div>
+
+      <!-- navbar -->
+      <div class="navbar">
+        <ul>
+          <li class="lists active">
+            <a href="#Home">
+              <span class="icons">
+                <i class="fa-solid fa-house"></i>
+              </span>
+              <span class="link">Home</span>
+            </a>
+          </li>
+
+          <li class="lists">
+            <a href="#Plans">
+              <span class="icons">
+                <i class="fa-solid fa-hand-holding-dollar fa-lg"></i>
+              </span>
+              <span class="link">Plans</span>
+            </a>
+          </li>
+          <li class="lists">
+            <a href="#Services">
+              <span class="icons">
+                <i class="fa-solid fa-handshake fa-lg"></i>
+              </span>
+              <span class="link">Services</span>
+            </a>
+          </li>
+          <li class="lists">
+            <a href="#Contact">
+              <span class="icons">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <span class="link">Contact</span>
+            </a>
+          </li>
+          <li class="lists">
+            <a href="#About">
+              <span class="icons">
+                <i class="fa-solid fa-address-card"></i>
+              </span>
+              <span class="link">About </span>
+            </a>
+          </li>
+          <div class="indicate"></div>
+        </ul>
+      </div>
+
+      <!-- login button -->
+      <div class="show-login">
+        <button id="login-button" class="btn">Login</button>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="menu-btn">
+        <div class="hamburger" id="bar1"></div>
+      </div>
+    </nav>
+
+    <!-- Dropdown menu -->
+    <div class="dropdown-menu">
+      <li>
+        <a href="#Home"><i class="fa-solid fa-house"></i> Home</a>
+      </li>
+      <li>
+        <a href="#Plans"
+          ><i class="fa-solid fa-hand-holding-dollar fa-lg"></i> Plans</a
+        >
+      </li>
+      <li>
+        <a href="#Services"
+          ><i class="fa-solid fa-handshake fa-lg"></i> Services</a
+        >
+      </li>
+      <li>
+        <a href="#Contact"><i class="fa-solid fa-user"></i> Contact Us</a>
+      </li>
+      <li>
+        <a href="#About"><i class="fa-solid fa-address-card"></i> About Us</a>
+      </li>
+      <button id="login" class="btn">Login</button>
+    </div>
+
+    <!-- login form -->
+    <div class="popup-form">
+      <div class="close-btn">&times;</div>
+      <div class="login-form">
+        <h2><strong>Log in</strong></h2>
+        <div class="note"></div>
+        <form class="form">
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter the email"
+              class="form-inputs"
+              autocomplete="new-password"
+            />
+          </div>
+          <div class="form-element">
+            <label for="Password">Password</label>
+            <input
+              type="password"
+              id="Password"
+              placeholder="Enter the Password"
+              class="form-inputs"
+              autocomplete="new-password"
+            />
+          </div>
+          <div class="form-element">
+            <input type="checkbox" id="rememberme" />
+            <label for="rememberme">Remember me</label>
+          </div>
+          <div class="form-element">
+            <button id="sign-in" class="border btn">Sign in</button>
+          </div>
+          <div class="form-element">
+            <a href="#">Forgot Password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- form background -->
+    <div id="overlay"></div>
+    <!-- NAV COMPLETE -->
+
+    <!-- HOME SECTION -->
+    <section class="home" id="Home">
+      <!-- SLIDER -->
+      <div class="slider-container">
+        <div class="slider-tabs">
+          <input id="slider1" type="radio" name="slider" checked />
+          <input id="slider2" type="radio" name="slider" />
+          <input id="slider3" type="radio" name="slider" />
+          <div class="slider-buttons">
+            <label for="slider1"></label>
+            <label for="slider2"></label>
+            <label for="slider3"></label>
+          </div>
+          <div class="slider-content">
+            <div class="box slider1">
+              <div class="content-box">
+                <h5 data-aos="fade-down">Welcome To Our</h5>
+                <h2 data-aos="fade-right">
+                  B<span>B</span>G<span> FITNESS </span>CLUB
+                </h2>
+                <p data-aos="fade-down">
+                  | Ready to Get<span style="color: rgb(252, 154, 35)">
+                    Fit</span
+                  >, Be <span style="color: rgb(252, 154, 35)">Strong</span> and
+                  <span style="color: rgb(252, 154, 35)"> Motivated</span>
+                </p>
+                <div data-aos="zoom-in-up">
+                  <a href="#Join"
+                    ><button class="bg-btn btn">Join now</button></a
+                  >
+                  <a href="#"><button class="bd-btn">Learn more</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="box slider2">
+              <div class="content-box">
+                <h5>
+                  <span>Make</span> Yourself <span>Fit</span> ,<span
+                    >Healthy</span
+                  >
+                  and
+                  <span>Confident</span>
+                </h5>
+                <p>
+                  More than 1200 womens have transformermed their body and
+                  becomes fit with formely BBG Programs
+                </p>
+                <div>
+                  <button class="bd-btn">30 minutes workout</button>
+                  <button class="bd-btn">Workout Anytime</button>
+                </div>
+              </div>
+            </div>
+            <div class="box slider3">
+              <div class="content-box">
+                <h5>
+                  <span>Push</span> Yourself <span>and</span> Make Yourself
+                  <span>Proud</span>
+                </h5>
+                <p>
+                  Shape your body in the guidence of more than 10 years of
+                  experienced and professional BBG trainers
+                </p>
+                <button class="bd-btn">All Fitness levels</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home secion complete -->
+
+    <!-- New section heading -->
+    <div id="About">
+      <h2 class="section"><span> About BBG</span></h2>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="about-img" data-aos="fade-right">
+        <img src="images/aboutimage.jpg" alt="" loading="lazy" />
+      </div>
+      <!-- about-content -->
+      <div class="about-content" data-aos="fade-up">
+        <h2 class="heading">BBG Fitness Club</h2>
+        <p style="text-align: center">
+          At BBG Fitness Club, we know that customized approaches to fitness
+          deliver superior results.If you are ready to transform your
+          health,fitness and performance goals into a reality, join our awesome
+          B2G community of fitness fam,athletes and professional BBG fitness
+          trainers and begin your journey to more fit you today.
+        </p>
+        <div class="box-container">
+          <div class="box">
+            <h4><i class="fa-solid fa-person-running"></i>Fitness Training</h4>
+            <p>
+              If your goals are to improve your overall health and wellness, we
+              have everything you need. We have cardio equipments spanning two
+              floors including stepmills ,stretching areas with mats, foam
+              rollers,and all the fitness equipments.
+            </p>
+          </div>
+          <div class="box">
+            <h4><i class="fa-solid fa-dumbbell fa-xs"></i>Weight Training</h4>
+            <p>
+              From bodybuilding to powerlifting and everything in between,club
+              has the equipment to help you reach your goals.With dumbells
+              ,squat racks,deadlift platforms,competition benches, and a variety
+              of plate loaded and pin loaded machines, we have everything you
+              need.
+            </p>
+          </div>
+        </div>
+        <button class="btn border">Read More</button>
+      </div>
+    </section>
+    <!-- About section completed -->
+
+    <header class="headings" data-aos="slide-right">
+      <div class="heading1-img">
+        <img src="images/choose.png" alt="" loading="lazy" />
+      </div>
+      <h2>
+        <i>Why You </i>
+        <span> <i>Choose Us</i></span>
+      </h2>
+    </header>
+    <!-- Data section -->
+    <section class="num-section">
+      <div class="num-container">
+        <div class="num-box" data-aos="fade-left">
+          <div class="num-icon">
+            <i class="fa-solid fa-dumbbell"></i>
+          </div>
+          <div class="num">1500</div>
+          <div class="num-detail">BBG Equipments</div>
+        </div>
+
+        <div class="num-box" data-aos="fade-right">
+          <div class="num-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="num">5000</div>
+          <div class="num-detail">Our Clients</div>
+        </div>
+
+        <div class="num-box" data-aos="fade-left">
+          <div class="num-icon">
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+          <div class="num" data-val="2000">2000</div>
+
+          <div class="num-detail">Happy Womens</div>
+        </div>
+
+        <div
+          class="num-box"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="num-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <div class="num">10000</div>
+          <div class="num-detail">BBG Followers</div>
+        </div>
+      </div>
+    </section>
+    <!-- Data section completed -->
+
+    <!-- New section Plans -->
+    <header class="headings" data-aos="slide-right" id="Plans">
+      <div class="heading-img">
+        <img src="images/price-tag (1).png" alt="" loading="lazy" />
+      </div>
+      <h2>
+        <i>Our Special</i>
+        <span><i> Plans</i></span>
+      </h2>
+    </header>
+
+    <!-- PLANS SECTION -->
+    <section class="plans-section">
+      <div class="plans-card" data-aos="flip-right">
+        <header class="plans-header">
+          <div class="plans-img">
+            <img src="images/Basic plan.png" alt="" loading="lazy" />
+          </div>
+          <h3>Basic Plan</h3>
+          <h4>$62.5</h4>
+        </header>
+        <ul class="plans-list">
+          <li class="plan-item">
+            <i class="fa-regular fa-circle-check"></i>5 Days In a Week
+          </li>
+          <li class="plan-item">
+            <i class="fa-regular fa-circle-check"></i>Our BBG Gym Suit
+          </li>
+          <li class="plan-item plans-list-opacity">
+            <i class="fa-regular fa-circle-check"></i>Complete Diet PLan
+          </li>
+          <li class="plan-item plans-list-opacity">
+            <i class="fa-regular fa-circle-check"></i>Bottle of Protein
+          </li>
+          <li class="plan-item plans-list-opacity">
+            <i class="fa-regular fa-circle-check"></i>Professional Trainers
+            Support
+          </li>
+        </ul>
+        <button class="buy-btn btn">
+          Buy Now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Plan card 2 -->
+      <div class="plans-card-active plans-card" data-aos="fade-up">
+        <header class="plans-header">
+          <div class="plans-img">
+            <img src="images/Premium.png" alt="" loading="lazy" />
+          </div>
+          <h3>Premium Plan</h3>
+          <h4>$125</h4>
+        </header>
+        <ul class="plans-list">
+          <li class="plan-item">
+            <i class="fa-regular fa-circle-check"></i>5 Days In a Week
+          </li>
+          <li class="plan-item">
+            <i class="fa-regular fa-circle-check"></i>Our BBG Gym Suit
+          </li>
+          <li class="plan-item">
+            <i class="fa-regular fa-circle-check"></i>Complete Diet PLan
+          </li>
+          <li class="plan-item">
+            <i class="fa-regular fa-circle-check"></i>Bottle of Protein
+          </li>
+          <li class="plan-item">
+            <i class="fa-regular fa-circle-check"></i> Professional Trainers
+            Support
+          </li>
+        </ul>
+        <button class="buy-btn">
+          Buy Now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Plan card 3 -->
+      <div class="plans-card" data-aos="flip-left">
+        <header class="plans-header">
+          <div class="plans-img">
+            <img src="images/diamond--plan.png" alt="" loading="lazy" />
+          </div>
+          <h3>Diamond Plan</h3>
+          <h4>$100</h4>
+        </header>
+        <ul class="plans-list">
+          <li class="plan-item">
+            <i class="fa-regular fa-circle-check"></i>5 Days In a Week
+          </li>
+          <li class="plan-item">
+            <i class="fa-regular fa-circle-check"></i>Our BBG Gym Suit
+          </li>
+          <li class="plan-item">
+            <i class="fa-regular fa-circle-check"></i>Complete Diet PLan
+          </li>
+          <li class="plan-item plans-list-opacity">
+            <i class="fa-regular fa-circle-check"></i>Bottle of Protein
+          </li>
+          <li class="plan-item plans-list-opacity">
+            <i class="fa-regular fa-circle-check"></i> Professional Trainers
+            Support
+          </li>
+        </ul>
+        <button class="buy-btn btn">
+          Buy Now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Plan section complete -->
+
+    <!-- DISCOUNT SECTION -->
+    <div class="discount">
+      <h6 data-aos="fade-down"><span>Join Us Now</span></h6>
+      <h5 data-aos="fade-right">GET UPTO 50% DISCOUNT</h5>
+
+      <p data-aos="fade-down">
+        Get fit for less! Our 50% discount offers makes fitness affordable,
+        offering eligible individuals half off our regular membership fees.
+        Achieve your fitness goals without breaking the bank.
+      </p>
+
+      <a href="#Join" data-aos="fade-up"
+        ><button class="btn">Join Now</button></a
+      >
+    </div>
+    <!-- DISCOUNT SECTION COMPLETED -->
+
+    <!-- New section Plans -->
+    <header id="Services" class="headings" data-aos="slide-right">
+      <div class="heading-img">
+        <img src="images/dumbell.png" alt="" loading="lazy" />
+      </div>
+      <h2>
+        <i>Workout</i>
+        <span><i> Services</i></span>
+      </h2>
+    </header>
+
+    <!-- WORKOUT SERVICES -->
+    <div class="service-section" data-aos="fade-down">
+      <div class="service-card" id="weightlifting">
+        <div class="card-img">
+          <img src="images/weightlifting.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <div class="card-logo">
+              <img
+                src="images/weight-icon.png"
+                alt=""
+                style="width: 30px; height: 30px"
+              />
+            </div>
+
+            <h5>WEIGHT LIFTING</h5>
+          </div>
+          <p>
+            Transform your physique, build muscle, and increase strength with
+            our weightlifting program for optimal gains.
+          </p>
+          <button class="btn">
+            Explore<i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="service-card" id="cardio">
+        <div class="card-img">
+          <img src="images/cardio.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <div class="card-logo">
+              <img
+                src="images/runningicon.png"
+                alt=""
+                style="width: 25px; height: 25px"
+              />
+            </div>
+
+            <h5>CARDIO EXERCISE</h5>
+          </div>
+          <p>
+            Get your heart pumping and burn calories with our dynamic cardio
+            program for a healthier and fitter you
+          </p>
+          <button class="btn">
+            Explore<i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="service-card" id="fatburn">
+        <div class="card-img">
+          <img src="images/fat burn.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <div class="card-logo">
+              <img
+                src="images/fatburnicon.png"
+                alt=""
+                style="width: 50px; height: 50px"
+              />
+            </div>
+
+            <h5>FAT BURN</h5>
+          </div>
+          <p>
+            Torch fat, sculpt your body, and reach your weight loss goals with
+            our high-intensity fat burn program
+          </p>
+          <button class="btn">
+            Explore<i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="service-card" id="yoga">
+        <div class="card-img">
+          <img src="images/yoga.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <div class="card-logo">
+              <img
+                src="images/yoga-icon.png"
+                alt=""
+                style="width: 25px; height: 25px"
+              />
+            </div>
+
+            <h5>YOGA</h5>
+          </div>
+          <p>
+            Discover peace, improve flexibility, and strengthen your body
+            through our yoga program for mind and body
+          </p>
+          <button class="btn">
+            Explore<i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Service section complted -->
+
+    <!-- JOIN SECTION -->
+    <section class="join-section" id="Join">
+      <div class="join-img">
+        <img src="images/joinimg.jpg" alt="" loading="lazy" />
+      </div>
+
+      <div class="join-form">
+        <h5><span>JOIN NOW</span></h5>
+        <div class="signup">
+          <form
+            action="https://formspree.io/f/mqkorzyj"
+            method="POST"
+            class="form"
+          >
+            <label for="name">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="text"
+                autocomplete="off"
+              />
+            </label>
+            <label for="email">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                autocomplete="off"
+              />
+            </label>
+            <label for="tel">
+              <input
+                type="tel"
+                placeholder="Enter your number"
+                name="tel"
+                minlength="10"
+                autocomplete="off"
+              />
+            </label>
+            <label for="location">
+              <input
+                type="text"
+                placeholder="Enter your location"
+                name="text"
+                autocomplete="off"
+              />
+            </label>
+
+            <input type="submit" class="btn button" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Join Section completed -->
+
+    <!-- New section testimonials -->
+    <header class="headings" data-aos="slide-right">
+      <!-- <div class="heading-img" style="width: 5.5rem; height: 5.5rem">
+        <img src="/star-logo2.png" alt="" />
+      </div> -->
+      <h2>
+        <i>What Our</i>
+        <span><i> Clients Say</i></span>
+      </h2>
+    </header>
+
+    <!-- TESTIMONIAL SECTION STARTED -->
+    <section class="testimonials">
+      <div class="testimonial-container">
+        <div class="testimonial-content">
+          <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+              <!-- commentbox-1 -->
+              <div class="swiper-slide comment-box" data-aos="fade-down">
+                <!-- top -->
+                <div class="box-top">
+                  <!-- profile -->
+                  <div class="profile">
+                    <!-- customerimg -->
+                    <div class="customerimg">
+                      <img src="images/customer1.jpg" alt="" />
+                    </div>
+                    <!-- name -->
+                    <div class="name-rating">
+                      <h6 class="name">David Andison</h6>
+                      <!-- starrating -->
+                      <div class="starrating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- comment -->
+                <div class="comment">
+                  <p>
+                    <span><i class="fa-solid fa-quote-left"></i></span> Signed
+                    up for a one-year plan. Tried to follow the routine that the
+                    fitness trainer set for me.The enviroment is very nice and
+                    my trainer is very friendly and polite in nature.BBG is the
+                    best gym for those who are looking for a gym at low cost and
+                    best experience.
+                    <span><i class="fa-solid fa-quote-right"></i></span>
+                  </p>
+                </div>
+              </div>
+              <!-- comment 1 completed -->
+
+              <!-- commentbox-2 -->
+              <div class="swiper-slide comment-box" data-aos="fade-down">
+                <!-- top -->
+                <div class="box-top">
+                  <!-- profile -->
+                  <div class="profile">
+                    <!-- customerimg -->
+                    <div class="customerimg">
+                      <img src="images/customer2.jpg" alt="" />
+                    </div>
+                    <!-- name -->
+                    <div class="name-rating">
+                      <h6 class="name">Emma Willson</h6>
+                      <!-- starrating -->
+                      <div class="starrating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- comment -->
+                <div class="comment">
+                  <p>
+                    <span><i class="fa-solid fa-quote-left"></i></span> The
+                    overall atmosphere at BBG fitness club is energetic and
+                    inspiring. The gym never feels overcrowded or overwhelming.
+                    There's a sense of community among the clients, and everyone
+                    seems to be focused on their fitness journey, which adds to
+                    the positive environment.
+                    <span><i class="fa-solid fa-quote-right"></i></span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- commentbox-3 -->
+              <div class="swiper-slide comment-box" data-aos="fade-down">
+                <!-- top -->
+                <div class="box-top">
+                  <!-- profile -->
+                  <div class="profile">
+                    <!-- customerimg -->
+                    <div class="customerimg">
+                      <img src="images/customer3.jpg" alt="" />
+                    </div>
+                    <!-- name -->
+                    <div class="name-rating">
+                      <h6 class="name">Michael Taylor</h6>
+                      <!-- starrating -->
+                      <div class="starrating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- comment -->
+                <div class="comment">
+                  <p>
+                    <span><i class="fa-solid fa-quote-left"></i></span> BBG is
+                    very clean and tidy gym,every equipments works very well.
+                    And the trainers are so polite. My personal trainer, such a
+                    nice and friendly man. And trains me in a nice way. For
+                    someone who is looking for a Good gym, with best support
+                    I'll recommend only this gym.
+
+                    <span><i class="fa-solid fa-quote-right"></i></span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- commentbox-4 -->
+              <div class="swiper-slide comment-box" data-aos="fade-down">
+                <!-- top -->
+                <div class="box-top">
+                  <!-- profile -->
+                  <div class="profile">
+                    <!-- customerimg -->
+                    <div class="customerimg">
+                      <img src="images/customer4.jpg" alt="" />
+                    </div>
+                    <!-- name -->
+                    <div class="name-rating">
+                      <h6 class="name">Henry Williams</h6>
+                      <!-- starrating -->
+                      <div class="starrating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- comment -->
+                <div class="comment">
+                  <p>
+                    <span><i class="fa-solid fa-quote-left"></i></span> BBG is
+                    the best gym I’ve ever been to,the equipment is superb, the
+                    space is well-laid out, and the staff are wonderful! The
+                    owners have created a community gym- feel. The staff is
+                    knowledgeable about the equipment and training routines.
+                    <span><i class="fa-solid fa-quote-right"></i></span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- commentbox-5 -->
+              <div class="swiper-slide comment-box" data-aos="fade-down">
+                <!-- top -->
+                <div class="box-top">
+                  <!-- profile -->
+                  <div class="profile">
+                    <!-- customerimg -->
+                    <div class="customerimg">
+                      <img src="images/customer5.jpg" alt="" />
+                    </div>
+                    <!-- name -->
+                    <div class="name-rating">
+                      <h6 class="name">John Doe</h6>
+                      <!-- starrating -->
+                      <div class="starrating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- comment -->
+                <div class="comment">
+                  <p>
+                    <span><i class="fa-solid fa-quote-left"></i></span> I have
+                    been a client at BBG fitness club for several months now,
+                    and overall, my experience has been positive. The facilities
+                    at BBG fitness club are spacious, well-maintained, and offer
+                    a wide range of equipment to cater to different fitness
+                    goals.
+                    <span><i class="fa-solid fa-quote-right"></i></span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- commentbox-6 -->
+              <div class="swiper-slide comment-box" data-aos="fade-down">
+                <!-- top -->
+                <div class="box-top">
+                  <!-- profile -->
+                  <div class="profile">
+                    <!-- customerimg -->
+                    <div class="customerimg">
+                      <img src="images/customer6.jpg" alt="" />
+                    </div>
+                    <!-- name -->
+                    <div class="name-rating">
+                      <h6 class="name">Jacob Gill</h6>
+                      <!-- starrating -->
+                      <div class="starrating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- comment -->
+                <div class="comment">
+                  <p>
+                    <span><i class="fa-solid fa-quote-left"></i></span>
+
+                    I would like to thanks BBG,for giving me all the guidance to
+                    loss weight in 1 month. This seemed to be very impossible
+                    for me.This could only happen with having best trainers in
+                    your gym.Whether you're into strength training, cardio, BBG
+                    has you covered.
+                    <span><i class="fa-solid fa-quote-right"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- swiper pagination -->
+          <div class="swiper-pagination testimonial-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIAL SECTION completed -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="part1">
+        <div class="sub-part1">
+          <!-- logo -->
+          <div class="logo2">
+            <img src="images/gymlogo.png" alt="" loading="lazy" />
+            <h2>B<span>B</span>G</h2>
+          </div>
+          <!-- subscribe -->
+          <div class="subscribe">
+            <p>Subscribe for Company <br />Updates below</p>
+            <form action="https://formspree.io/f/xwkjdgbj" method="POST">
+              <label for="email">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  name="email"
+                />
+                <a href=""><button class="btn">SUBSCRIBE</button></a>
+              </label>
+            </form>
+          </div>
+          <!-- Social media -->
+          <div class="social">
+            <h6>SOCIAL MEDIA</h6>
+            <img src="images/facebook-icon.png" alt="" />
+            <img src="images/insta-icon.png" alt="" />
+            <img src="images/whatsapp-icon.png" alt="" />
+            <img src="images/twitter-icon.png" alt="" />
+            <img src="images/telegram-icon.png" alt="" />
+            <p>Get in touch with our social community</p>
+          </div>
+        </div>
+        <div class="sub-part2">
+          <div class="coloum">
+            <h6><span>QUICK LINKS</span></h6>
+            <a href="#Home" class="footer-link">Home</a>
+            <a href="#Plans" class="footer-link">Plans</a>
+            <a href="#Join" class="footer-link">Join Us</a>
+            <a href="#About" class="footer-link">About Us</a>
+          </div>
+          <div class="coloum" id="Contact">
+            <h6><span>CONTACT US</span></h6>
+            <a href="" class="footer-link"
+              ><span><i class="fa-solid fa-phone"></i></span>6377416621</a
+            >
+            <a href="" class="footer-link"
+              ><span><i class="fa-solid fa-envelope"></i></span
+              >sakshamj9944@gmail.com</a
+            >
+            <a href="" class="footer-link"
+              ><span><i class="fa-solid fa-location-dot"></i></span
+              >Kota(Rajasthan)-324006,India</a
+            >
+          </div>
+          <div class="coloum">
+            <h6><span>SERVICES</span></h6>
+            <a href="#weightlifting" class="footer-link">Weightlifting</a>
+            <a href="#fatburn" class="footer-link">Fat Burn</a>
+            <a href="#yoga" class="footer-link">Yoga</a>
+            <a href="#cardio" class="footer-link">Cardio Exercise</a>
+          </div>
+        </div>
+      </div>
+      <div class="part2">
+        This website is created by <span>SAKSHAM JAIN</span> | Copyright
+        <span>&copy;2023</span> All rights are reserved
+      </div>
+    </footer>
+    <!-- Footer completed -->
+
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        mirror: true,
+      });
+    </script>
+    <!-- Animation completed -->
+
+    <!-- TESTIMONIALS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".testimonial-slider", {
+        grabCursor: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".testimonial-pagination",
+          clickable: true,
+        },
+
+        breakpoints: {
+          1100: {
+            slidesPerView: 3,
+          },
+          700: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
+    <!-- TESTIMONIAL COMPLETED -->
+
+    <!-- FOR CHOOSE US  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+      $(".num").counterUp({
+        delay: 10,
+        time: 1200,
+      });
+    </script>
+    <!-- CHOOSE COMPLETED -->
+  </body>
+
+  <script src="script.js"></script>
+</html>
